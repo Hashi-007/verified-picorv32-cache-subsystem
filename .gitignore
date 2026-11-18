@@ -1,0 +1,35 @@
+# Generated simulation output; curated summaries live in verification/results/.
+/sim/build/
+/build/
+/dist/
+**/transcript
+**/modelsim.ini
+**/vsim.wlf
+*.wlf
+*.ucdb
+*.vcd
+*.log
+*.jou
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Local learning history and superseded planning material are preserved on disk.
+/reference/
+/progress.md
+/BASELINE_REVIEW.md
+/DESIGN_MAP.md
+/ARCHITECTURE_DIAGRAM.md
+/docs/build_project_map_pdf.py
+/docs/project_map_pdf_checks.json
+/diagrams/draw_cache_architecture.py
+/diagrams/cache_architecture.svg
+/diagrams/cache_architecture.png
+
+# Historical D-cache-only exports are superseded by the four-mode results.
+/verification/processor_metrics.json
+/verification/processor_metrics.csv
+/verification/processor_comparisons.csv
+/verification/PROCESSOR_REPORT.md
+/verification/WRAPPER_SMOKE.md

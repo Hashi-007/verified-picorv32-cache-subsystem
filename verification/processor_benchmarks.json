@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-17",
+  "waits": [
+    1,
+    4,
+    8
+  ],
+  "profiles": {
+    "reuse": {
+      "description": "16 input words, 16 sum passes",
+      "expected_result": 2176,
+      "result_address": "00001100",
+      "cpu_data_requests": 258,
+      "instruction_reads": 1607,
+      "hits": 252,
+      "misses": 6,
+      "cached_reads": 24,
+      "cached_writes": 0,
+      "uncached_reads": 256,
+      "uncached_writes": 2,
+      "evidence": "reuse_waits_20261117/reuse_comparison.json",
+      "cycles": {
+        "1/1": 7001,
+        "0/1": 6947,
+        "1/4": 11894,
+        "0/4": 12542,
+        "1/8": 18418,
+        "0/8": 20002
+      },
+      "cpu_reads": 256,
+      "cpu_stores": 2,
+      "read_hits": 252,
+      "read_misses": 4
+    },
+    "sequential": {
+      "description": "1280 input words, one sum pass",
+      "expected_result": 819840,
+      "result_address": "00003000",
+      "cpu_data_requests": 1282,
+      "instruction_reads": 7691,
+      "hits": 960,
+      "misses": 322,
+      "cached_reads": 1288,
+      "cached_writes": 0,
+      "uncached_reads": 1280,
+      "uncached_writes": 2,
+      "evidence": "sequential_image_20261117/sequential_comparison.json",
+      "cycles": {
+        "1/1": 36229,
+        "1/4": 63166,
+        "1/8": 99082,
+        "0/1": 33331,
+        "0/4": 60250,
+        "0/8": 96142
+      },
+      "cpu_reads": 1280,
+      "cpu_stores": 2,
+      "read_hits": 960,
+      "read_misses": 320
+    },
+    "conflict": {
+      "description": "128 pairs of same-index alternating loads",
+      "expected_result": 384,
+      "result_address": "00003000",
+      "cpu_data_requests": 258,
+      "instruction_reads": 905,
+      "hits": 0,
+      "misses": 258,
+      "cached_reads": 1032,
+      "cached_writes": 0,
+      "uncached_reads": 256,
+      "uncached_writes": 2,
+      "evidence": "conflict_image_20261117/conflict_comparison.json",
+      "cycles": {
+        "1/1": 6589,
+        "1/4": 12400,
+        "1/8": 20148,
+        "0/1": 4267,
+        "0/4": 7756,
+        "0/8": 12408
+      },
+      "cpu_reads": 256,
+      "cpu_stores": 2,
+      "read_hits": 0,
+      "read_misses": 256
+    },
+    "store_heavy": {
+      "description": "16 words overwritten on 16 passes, then evicted and summed",
+      "expected_result": 256,
+      "result_address": "00003000",
+      "cpu_data_requests": 278,
+      "instruction_reads": 1470,
+      "hits": 264,
+      "misses": 14,
+      "cached_reads": 56,
+      "cached_writes": 16,
+      "uncached_reads": 20,
+      "uncached_writes": 258,
+      "evidence": "store_heavy_image_20261117/store_heavy_comparison.json",
+      "cycles": {
+        "1/1": 6602,
+        "1/4": 11228,
+        "1/8": 17396,
+        "0/1": 6444,
+        "0/4": 11688,
+        "0/8": 18680
+      },
+      "cpu_reads": 20,
+      "cpu_stores": 258,
+      "read_hits": 12,
+      "read_misses": 8
+    }
+  }
+}

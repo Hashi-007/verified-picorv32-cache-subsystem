@@ -1,0 +1,13 @@
+program,ram_wait_cycles,uncached_cycles,dcache_only_cycles,icache_only_cycles,both_cycles,both_reduction_vs_uncached_percent,both_reduction_vs_dcache_percent
+reuse,1,6947,7001,6992,7046,-1.43,-0.64
+reuse,4,12542,11894,7826,7178,42.77,39.65
+reuse,8,20002,18418,8938,7354,63.23,60.07
+sequential,1,33331,36229,33376,36274,-8.83,-0.12
+sequential,4,60250,63166,37282,40198,33.28,36.36
+sequential,8,96142,99082,42490,45430,52.75,54.15
+conflict,1,4267,6589,4303,6625,-55.26,-0.55
+conflict,4,7756,12400,5125,9769,-25.95,21.22
+conflict,8,12408,20148,6221,13961,-12.52,30.71
+store_heavy,1,6444,6602,6516,6674,-3.57,-1.09
+store_heavy,4,11688,11228,7446,6986,40.23,37.78
+store_heavy,8,18680,17396,8686,7402,60.37,57.45

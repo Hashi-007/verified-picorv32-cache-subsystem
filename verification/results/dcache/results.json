@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "log": "simulation.log",
+      "cpu": 61,
+      "hits": 56,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 8,
+      "continuous": 0,
+      "finish_ns": 2460.0
+    },
+    {
+      "log": "cache_wait_test_wait1.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 950.0
+    },
+    {
+      "log": "cache_wait_test_wait2.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 1270.0
+    },
+    {
+      "log": "cache_wait_test_wait3.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 1590.0
+    },
+    {
+      "log": "cache_wait_test_wait4.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 1910.0
+    },
+    {
+      "log": "cache_wait_test_wait5.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 2230.0
+    },
+    {
+      "log": "cache_wait_test_wait6.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 2550.0
+    },
+    {
+      "log": "cache_wait_test_wait7.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 2870.0
+    },
+    {
+      "log": "cache_wait_test_wait8.log",
+      "cpu": 8,
+      "hits": 3,
+      "misses": 5,
+      "ram_reads": 20,
+      "ram_writes": 12,
+      "continuous": 0,
+      "finish_ns": 3190.0
+    },
+    {
+      "log": "cache_reset_test_wait4.log",
+      "cpu": 10,
+      "hits": 7,
+      "misses": 3,
+      "ram_reads": 14,
+      "ram_writes": 2,
+      "continuous": 0,
+      "finish_ns": 1280.0
+    },
+    {
+      "log": "cache_stream_test_wait4.log",
+      "cpu": 301,
+      "hits": 30,
+      "misses": 271,
+      "ram_reads": 1084,
+      "ram_writes": 0,
+      "continuous": 300,
+      "finish_ns": 62955.0
+    },
+    {
+      "log": "cache_reset_sweep_test_wait4.log",
+      "cpu": 45,
+      "hits": 35,
+      "misses": 10,
+      "ram_reads": 50,
+      "ram_writes": 10,
+      "continuous": 0,
+      "finish_ns": 5140.0
+    },
+    {
+      "log": "cache_reset_sweep_test_random_seed7.log",
+      "cpu": 45,
+      "hits": 35,
+      "misses": 10,
+      "ram_reads": 50,
+      "ram_writes": 10,
+      "continuous": 0,
+      "finish_ns": 5830.0
+    },
+    {
+      "log": "cache_random_test_random_seed1.log",
+      "cpu": 1000,
+      "hits": 427,
+      "misses": 573,
+      "ram_reads": 2292,
+      "ram_writes": 980,
+      "continuous": 999,
+      "finish_ns": 206705.0
+    },
+    {
+      "log": "cache_random_test_random_seed7.log",
+      "cpu": 1000,
+      "hits": 408,
+      "misses": 592,
+      "ram_reads": 2368,
+      "ram_writes": 1032,
+      "continuous": 999,
+      "finish_ns": 212855.0
+    },
+    {
+      "log": "cache_random_test_random_seed23.log",
+      "cpu": 1000,
+      "hits": 404,
+      "misses": 596,
+      "ram_reads": 2384,
+      "ram_writes": 1024,
+      "continuous": 999,
+      "finish_ns": 214565.0
+    }
+  ],
+  "functional_bins": "442/442",
+  "negative_probe": "PASS: exactly 20 intended checker errors, no golden-image contamination",
+  "observed_coverage": {
+    "kind_hit": {
+      "hit": 4,
+      "target": 4
+    },
+    "indices": {
+      "hit": 256,
+      "target": 256
+    },
+    "words": {
+      "hit": 4,
+      "target": 4
+    },
+    "masks": {
+      "hit": 15,
+      "target": 15
+    },
+    "mask_hit": {
+      "hit": 30,
+      "target": 30
+    },
+    "kind_victim": {
+      "hit": 6,
+      "target": 6
+    },
+    "pairs": {
+      "hit": 16,
+      "target": 16
+    },
+    "ram": {
+      "hit": 64,
+      "target": 64
+    },
+    "reset": {
+      "hit": 11,
+      "target": 11
+    }
+  },
+  "dut_sha256": "F36382F54A76FA742E8D66DFF655E9A2901C24A7864040F04E7AD4E1E8550277",
+  "total_cpu": 3526,
+  "total_ram": 11584,
+  "source_sha256": {
+    "rtl\\data_cache.sv": "f36382f54a76fa742e8d66dff655e9a2901c24a7864040f04e7ad4e1e8550277",
+    "tb\\cache_agent.sv": "b1cf7adf73ff1648562faa548c506232ac5e74a5e0d1ff03a35ab591752b2e23",
+    "tb\\cache_base_sequence.sv": "223abe49dea16238bf19f405667ceb0d5da4444a6af4dfe49b74bbb67d266ece",
+    "tb\\cache_driver.sv": "85a0be34d867dae0f4c20d5b03597d7f9351ab312f4f3f1fd5e29b4c1b83c662",
+    "tb\\cache_env.sv": "4487bbb5c72ebce62f8f55c61cdef1846ac76bf11b16d79b086c055e4207618f",
+    "tb\\cache_if.sv": "cefe9a6efa5167e04d943fff732e8e84a56fddd7174338270c1a79a8a7159929",
+    "tb\\cache_item.sv": "7bf1477a21393580dc6259495ca3c0d60dc19b7b46e66631b5050d7993946064",
+    "tb\\cache_monitor.sv": "93b3c59662788b48b633e6d925886a8f6c78ebd2ddf40bd6e6e76221f9d8abab",
+    "tb\\cache_pkg.sv": "cd6f4793f60cdfe2fdd44c79f0e416cd55be95930c08e1f17204c1acbb2b0739",
+    "tb\\cache_ram_checker.sv": "b433d081aa6b4a302cb2b8fdb47a2f9a0466cfb43d1a301f1ca49c2d5dfcd53d",
+    "tb\\cache_random_sequence.sv": "7b3c2e4320c46f4156aa0a6e9e859f1f28c3d77dffa99c24960584e146695a48",
+    "tb\\cache_random_test.sv": "9d90ff421a5df76be073b76ffc6d41817ac0c5ae4e2b0b0ad3c3d5a081f4e500",
+    "tb\\cache_reset_sequence.sv": "b5d17334564fb05413fea9101f08d2871ce1b24ebfa945c3db4c3cde35543ca3",
+    "tb\\cache_reset_sweep_sequence.sv": "d20fc3c8737f49ff902ff1f59c3eea0b730650e3aa5614107a4e9b91cf64ae1b",
+    "tb\\cache_reset_sweep_test.sv": "652647a5dc68d5a327918eb3d3be19cdb605b1812c817229a8526b7c56e81774",
+    "tb\\cache_reset_test.sv": "7054a8de5062c8492f9fffc082fb0a4716bdf00a578c783854787daec32761f1",
+    "tb\\cache_scoreboard.sv": "55cbc7fd93c63047212a2c0fe3099ce3ca53188eb65351e9a80b520e6590053c",
+    "tb\\cache_sequence.sv": "192265423585d88740fca964df4211677cac6fbbf26132252988b4cc22d57ad9",
+    "tb\\cache_stall_checks.sv": "4971bdfe926e9592e223f05e195093b2165aefa8b8025a4144fe69db788d51de",
+    "tb\\cache_stream_sequence.sv": "4a4b4c3b4d5725c78a6e199febed50af929489a5483e178972e565049d7a79b5",
+    "tb\\cache_stream_test.sv": "914d13775ccb5c71d4b5f62687c00622dc04a74b634778849b17d84da5223fb5",
+    "tb\\cache_tb_top.sv": "f5d2863c51e96366170a4a88e1ac537b17c83003a264b0407dea4ffe0b8dc3d9",
+    "tb\\cache_test.sv": "c377f915799424cb965c9b31c5fd439e9aaa1445b75b3e939a0676104b85c240",
+    "tb\\cache_wait_sequence.sv": "775557b90cab4f6015194c9c2ebf44c84967e5d901064c0a554279f59982a945",
+    "tb\\cache_wait_test.sv": "0e92d99bc813f5e311ec5d0e51591ddb03dd93c1ffd8ab411657ac3e3b103a6a",
+    "tb\\ram_model.sv": "2ae6fd1bb5c7ce02cde41aea17a39a939ee66b685c36eb2a923746e1facc8d25",
+    "tb\\ram_monitor.sv": "5faddc85b9008ec0d70be9c7bd77b188f6157cdc656994e6d0dfced3c159af3b",
+    "sim\\README.md": "b8dba00eac9106fe980c61dc0d05a4163fe450112321c0924cecba27149c1184",
+    "sim\\regression.do": "75d0c266ef2abeb09bf46d976d25c9a729d696a6b7f45c6eec61d20095e65941",
+    "sim\\report_regression.do": "38fbd453a208474c830f70aeb590b746c5140aef87b2883c0977faa1256942ad",
+    "sim\\run.do": "c916c78a8cf3f8c3839f9a48a19013317c71cfd12c7bdde2775d5265428edda8",
+    "sim\\run_checker_probe.do": "44f44a8967cbf9452b293ce65384ba44714060eabdac58ea849c46452630b911",
+    "sim\\run_wait.do": "b47df54abdd934e74ec722f1d188f32c769f20b6395c44cfd97cf2006f917f03",
+    "sim\\transcript": "1ef00c477ec9c1cf67514cfcbbab2a376e95537e4ecbeda2a0f335ea1d60f15e",
+    "verification\\cache_checker_probe.sv": "3a9e61d12326d30091e954e26ad5a464fea1ed288472b5b0357165ade5974eca",
+    "verification\\check_regression.py": "fba3e5cb766b4ef60cf87eafabd7c768c5e4f499ed085820c4d801c307261377",
+    "verification\\REPORT.md": "9fb29c1624679fcec7d645082e4e079f7a8e41a196a09505d0e3f9d626ae4488",
+    "verification\\TEST_PLAN.md": "8c82381c33ad018dccd42488aeaf484908d97bcd1f9bb31bf013dc49f0c46681"
+  }
+}

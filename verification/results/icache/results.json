@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-18",
+  "status": "PASS",
+  "cases": [
+    {
+      "ram_wait_cycles": 1,
+      "completed_fetches": 32,
+      "ram_reads": 58,
+      "interrupted_refills": 4,
+      "stalled_cycles": 58
+    },
+    {
+      "ram_wait_cycles": 4,
+      "completed_fetches": 32,
+      "ram_reads": 58,
+      "interrupted_refills": 4,
+      "stalled_cycles": 232
+    },
+    {
+      "ram_wait_cycles": 8,
+      "completed_fetches": 32,
+      "ram_reads": 58,
+      "interrupted_refills": 4,
+      "stalled_cycles": 464
+    }
+  ],
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "simulation_errors": 0,
+  "expected_warning": "vopt-10587 from +acc debug visibility",
+  "rtl_unchanged_during_validation": true,
+  "source_sha256": {
+    "rtl/instruction_cache.sv": "c8be8d5ddddaff7345a99ac2f0c22fac48802828c13444f0ef89a8f9feacb205",
+    "tb/instruction_cache_tb.sv": "9ad4057c714c0f7295090b0a8a8fb6841e95c8b98684aa30a8fec98832a815f7",
+    "tb/wrapper_ram_model.sv": "b61f7a5aa928394ac1ca9aeff7191eee35607a30836cc5e10797d5567a0ef3c1",
+    "sim/run_instruction_cache.do": "de1bbafb169b4fdf9e716454606c2062524fa789b20d4836055e94247aad5c69"
+  },
+  "checked": [
+    "cold miss with tag zero",
+    "all four word offsets",
+    "four ordered RAM reads per miss",
+    "zero RAM reads on hits",
+    "continuous CPU valid across successive requests",
+    "same-index different-tag replacement",
+    "highest cache index",
+    "nonsequential instruction addresses",
+    "request stability under RAM stalls",
+    "idle reset invalidates cached lines",
+    "reset interrupts refill after 0/1/2/3 completed words"
+  ],
+  "scope": "Standalone instruction-cache functional simulation only; not yet integrated or benchmarked."
+}

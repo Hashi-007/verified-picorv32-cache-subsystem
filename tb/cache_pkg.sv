@@ -1,0 +1,26 @@
+package cache_pkg;
+    import uvm_pkg::*;
+    `include "uvm_macros.svh"
+
+    `include "cache_item.sv"
+    `include "cache_driver.sv"
+    `include "cache_monitor.sv"
+    `include "ram_monitor.sv"
+    `include "cache_agent.sv"
+    `include "cache_scoreboard.sv"
+    `include "cache_ram_checker.sv"
+    `include "cache_env.sv"
+    `include "cache_base_sequence.sv"
+    `include "cache_sequence.sv"
+    `include "cache_wait_sequence.sv"
+    `include "cache_reset_sequence.sv"
+    `include "cache_stream_sequence.sv"
+    `include "cache_random_sequence.sv"
+    `include "cache_reset_sweep_sequence.sv"
+    `include "cache_test.sv"
+    `include "cache_wait_test.sv"
+    `include "cache_reset_test.sv"
+    `include "cache_stream_test.sv"
+    `include "cache_random_test.sv"
+    `include "cache_reset_sweep_test.sv"
+endpackage

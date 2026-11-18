@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+<title id="title">Measured program cycles across RAM waits and cache configurations</title>
+<desc id="desc">Four workloads at RAM waits 1, 4 and 8. Lower cycles are better. All 48 plotted cases passed. Hit rates describe enabled caches; bypassed caches have no hit rate.</desc>
+<rect width="1000" height="720" fill="#ffffff"/>
+<text x="40" y="34" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="700">Program cycles across memory latencies</text>
+<text x="40" y="56" fill="#334155" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="400">Four cache configurations · fixed CPU and programs · lower is better</text>
+<line x1="42" y1="81" x2="70" y2="81" stroke="#64748b" stroke-width="2.5" stroke-dasharray=""/>
+<text x="79" y="85" fill="#334155" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="400">Neither</text>
+<line x1="277" y1="81" x2="305" y2="81" stroke="#b45309" stroke-width="2.5" stroke-dasharray="6 3"/>
+<text x="314" y="85" fill="#334155" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="400">D-cache only</text>
+<line x1="512" y1="81" x2="540" y2="81" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 3"/>
+<text x="549" y="85" fill="#334155" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="400">I-cache only</text>
+<line x1="747" y1="81" x2="775" y2="81" stroke="#047857" stroke-width="2.5" stroke-dasharray=""/>
+<text x="784" y="85" fill="#334155" font-family="Arial, sans-serif" font-size="13" text-anchor="start" font-weight="400">Both</text>
+<text x="80" y="123" fill="#0f172a" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="700">Repeated reuse</text>
+<text x="80" y="143" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="start" font-weight="400">I hits 99.69%  ·  D hits 97.67%  ·  D-read 98.44%</text>
+<line x1="80" y1="339.0" x2="430" y2="339.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="343.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">0</text>
+<line x1="80" y1="281.6666666666667" x2="430" y2="281.6666666666667" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="285.6666666666667" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">10,000</text>
+<line x1="80" y1="224.33333333333334" x2="430" y2="224.33333333333334" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="228.33333333333334" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">20,000</text>
+<line x1="80" y1="167.0" x2="430" y2="167.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="171.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">30,000</text>
+<line x1="80" y1="167" x2="80" y2="339" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="80" y1="339" x2="430" y2="339" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="80.0" y1="339" x2="80.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="80.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">1</text>
+<line x1="230.0" y1="339" x2="230.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="230.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">4</text>
+<line x1="430.0" y1="339" x2="430.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="430.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">8</text>
+<text x="255.0" y="377" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">RAM wait (cycles per word)</text>
+<polyline points="80.00,299.17 230.00,267.09 430.00,224.32" fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="80.00" cy="299.17" r="3.4" fill="#64748b"><title>Repeated reuse: Neither, RAM wait 1, 6,947 program cycles</title></circle>
+<circle cx="230.00" cy="267.09" r="3.4" fill="#64748b"><title>Repeated reuse: Neither, RAM wait 4, 12,542 program cycles</title></circle>
+<circle cx="430.00" cy="224.32" r="3.4" fill="#64748b"><title>Repeated reuse: Neither, RAM wait 8, 20,002 program cycles</title></circle>
+<polyline points="80.00,298.86 230.00,270.81 430.00,233.40" fill="none" stroke="#b45309" stroke-width="2.5" stroke-dasharray="6 3"/>
+<circle cx="80.00" cy="298.86" r="3.4" fill="#b45309"><title>Repeated reuse: D-cache only, RAM wait 1, 7,001 program cycles</title></circle>
+<circle cx="230.00" cy="270.81" r="3.4" fill="#b45309"><title>Repeated reuse: D-cache only, RAM wait 4, 11,894 program cycles</title></circle>
+<circle cx="430.00" cy="233.40" r="3.4" fill="#b45309"><title>Repeated reuse: D-cache only, RAM wait 8, 18,418 program cycles</title></circle>
+<polyline points="80.00,298.91 230.00,294.13 430.00,287.76" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 3"/>
+<circle cx="80.00" cy="298.91" r="3.4" fill="#2563eb"><title>Repeated reuse: I-cache only, RAM wait 1, 6,992 program cycles</title></circle>
+<circle cx="230.00" cy="294.13" r="3.4" fill="#2563eb"><title>Repeated reuse: I-cache only, RAM wait 4, 7,826 program cycles</title></circle>
+<circle cx="430.00" cy="287.76" r="3.4" fill="#2563eb"><title>Repeated reuse: I-cache only, RAM wait 8, 8,938 program cycles</title></circle>
+<polyline points="80.00,298.60 230.00,297.85 430.00,296.84" fill="none" stroke="#047857" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="80.00" cy="298.60" r="3.4" fill="#047857"><title>Repeated reuse: Both, RAM wait 1, 7,046 program cycles</title></circle>
+<circle cx="230.00" cy="297.85" r="3.4" fill="#047857"><title>Repeated reuse: Both, RAM wait 4, 7,178 program cycles</title></circle>
+<circle cx="430.00" cy="296.84" r="3.4" fill="#047857"><title>Repeated reuse: Both, RAM wait 8, 7,354 program cycles</title></circle>
+<text x="570" y="123" fill="#0f172a" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="700">Sequential scan</text>
+<text x="570" y="143" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="start" font-weight="400">I hits 99.93%  ·  D hits 74.88%  ·  D-read 75.00%</text>
+<line x1="570" y1="339.0" x2="920" y2="339.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="343.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">0</text>
+<line x1="570" y1="253.0" x2="920" y2="253.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="257.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">50,000</text>
+<line x1="570" y1="167.0" x2="920" y2="167.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="171.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">100,000</text>
+<line x1="570" y1="167" x2="570" y2="339" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="570" y1="339" x2="920" y2="339" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="570.0" y1="339" x2="570.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="570.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">1</text>
+<line x1="720.0" y1="339" x2="720.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="720.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">4</text>
+<line x1="920.0" y1="339" x2="920.0" y2="343" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="920.0" y="358" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">8</text>
+<text x="745.0" y="377" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">RAM wait (cycles per word)</text>
+<polyline points="570.00,281.67 720.00,235.37 920.00,173.64" fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="570.00" cy="281.67" r="3.4" fill="#64748b"><title>Sequential scan: Neither, RAM wait 1, 33,331 program cycles</title></circle>
+<circle cx="720.00" cy="235.37" r="3.4" fill="#64748b"><title>Sequential scan: Neither, RAM wait 4, 60,250 program cycles</title></circle>
+<circle cx="920.00" cy="173.64" r="3.4" fill="#64748b"><title>Sequential scan: Neither, RAM wait 8, 96,142 program cycles</title></circle>
+<polyline points="570.00,276.69 720.00,230.35 920.00,168.58" fill="none" stroke="#b45309" stroke-width="2.5" stroke-dasharray="6 3"/>
+<circle cx="570.00" cy="276.69" r="3.4" fill="#b45309"><title>Sequential scan: D-cache only, RAM wait 1, 36,229 program cycles</title></circle>
+<circle cx="720.00" cy="230.35" r="3.4" fill="#b45309"><title>Sequential scan: D-cache only, RAM wait 4, 63,166 program cycles</title></circle>
+<circle cx="920.00" cy="168.58" r="3.4" fill="#b45309"><title>Sequential scan: D-cache only, RAM wait 8, 99,082 program cycles</title></circle>
+<polyline points="570.00,281.59 720.00,274.87 920.00,265.92" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 3"/>
+<circle cx="570.00" cy="281.59" r="3.4" fill="#2563eb"><title>Sequential scan: I-cache only, RAM wait 1, 33,376 program cycles</title></circle>
+<circle cx="720.00" cy="274.87" r="3.4" fill="#2563eb"><title>Sequential scan: I-cache only, RAM wait 4, 37,282 program cycles</title></circle>
+<circle cx="920.00" cy="265.92" r="3.4" fill="#2563eb"><title>Sequential scan: I-cache only, RAM wait 8, 42,490 program cycles</title></circle>
+<polyline points="570.00,276.61 720.00,269.86 920.00,260.86" fill="none" stroke="#047857" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="570.00" cy="276.61" r="3.4" fill="#047857"><title>Sequential scan: Both, RAM wait 1, 36,274 program cycles</title></circle>
+<circle cx="720.00" cy="269.86" r="3.4" fill="#047857"><title>Sequential scan: Both, RAM wait 4, 40,198 program cycles</title></circle>
+<circle cx="920.00" cy="260.86" r="3.4" fill="#047857"><title>Sequential scan: Both, RAM wait 8, 45,430 program cycles</title></circle>
+<text x="80" y="415" fill="#0f172a" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="700">Same-index conflicts</text>
+<text x="80" y="435" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="start" font-weight="400">I hits 99.56%  ·  D hits 0.00%  ·  D-read 0.00%</text>
+<line x1="80" y1="631.0" x2="430" y2="631.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="635.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">0</text>
+<line x1="80" y1="573.6666666666667" x2="430" y2="573.6666666666667" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="577.6666666666667" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">10,000</text>
+<line x1="80" y1="516.3333333333334" x2="430" y2="516.3333333333334" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="520.3333333333334" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">20,000</text>
+<line x1="80" y1="459.0" x2="430" y2="459.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="70" y="463.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">30,000</text>
+<line x1="80" y1="459" x2="80" y2="631" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="80" y1="631" x2="430" y2="631" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="80.0" y1="631" x2="80.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="80.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">1</text>
+<line x1="230.0" y1="631" x2="230.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="230.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">4</text>
+<line x1="430.0" y1="631" x2="430.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="430.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">8</text>
+<text x="255.0" y="669" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">RAM wait (cycles per word)</text>
+<polyline points="80.00,606.54 230.00,586.53 430.00,559.86" fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="80.00" cy="606.54" r="3.4" fill="#64748b"><title>Same-index conflicts: Neither, RAM wait 1, 4,267 program cycles</title></circle>
+<circle cx="230.00" cy="586.53" r="3.4" fill="#64748b"><title>Same-index conflicts: Neither, RAM wait 4, 7,756 program cycles</title></circle>
+<circle cx="430.00" cy="559.86" r="3.4" fill="#64748b"><title>Same-index conflicts: Neither, RAM wait 8, 12,408 program cycles</title></circle>
+<polyline points="80.00,593.22 230.00,559.91 430.00,515.48" fill="none" stroke="#b45309" stroke-width="2.5" stroke-dasharray="6 3"/>
+<circle cx="80.00" cy="593.22" r="3.4" fill="#b45309"><title>Same-index conflicts: D-cache only, RAM wait 1, 6,589 program cycles</title></circle>
+<circle cx="230.00" cy="559.91" r="3.4" fill="#b45309"><title>Same-index conflicts: D-cache only, RAM wait 4, 12,400 program cycles</title></circle>
+<circle cx="430.00" cy="515.48" r="3.4" fill="#b45309"><title>Same-index conflicts: D-cache only, RAM wait 8, 20,148 program cycles</title></circle>
+<polyline points="80.00,606.33 230.00,601.62 430.00,595.33" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 3"/>
+<circle cx="80.00" cy="606.33" r="3.4" fill="#2563eb"><title>Same-index conflicts: I-cache only, RAM wait 1, 4,303 program cycles</title></circle>
+<circle cx="230.00" cy="601.62" r="3.4" fill="#2563eb"><title>Same-index conflicts: I-cache only, RAM wait 4, 5,125 program cycles</title></circle>
+<circle cx="430.00" cy="595.33" r="3.4" fill="#2563eb"><title>Same-index conflicts: I-cache only, RAM wait 8, 6,221 program cycles</title></circle>
+<polyline points="80.00,593.02 230.00,574.99 430.00,550.96" fill="none" stroke="#047857" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="80.00" cy="593.02" r="3.4" fill="#047857"><title>Same-index conflicts: Both, RAM wait 1, 6,625 program cycles</title></circle>
+<circle cx="230.00" cy="574.99" r="3.4" fill="#047857"><title>Same-index conflicts: Both, RAM wait 4, 9,769 program cycles</title></circle>
+<circle cx="430.00" cy="550.96" r="3.4" fill="#047857"><title>Same-index conflicts: Both, RAM wait 8, 13,961 program cycles</title></circle>
+<text x="570" y="415" fill="#0f172a" font-family="Arial, sans-serif" font-size="17" text-anchor="start" font-weight="700">Repeated stores</text>
+<text x="570" y="435" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="start" font-weight="400">I hits 99.46%  ·  D hits 94.96%  ·  D-read 60.00%</text>
+<line x1="570" y1="631.0" x2="920" y2="631.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="635.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">0</text>
+<line x1="570" y1="588.0" x2="920" y2="588.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="592.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">5,000</text>
+<line x1="570" y1="545.0" x2="920" y2="545.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="549.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">10,000</text>
+<line x1="570" y1="502.0" x2="920" y2="502.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="506.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">15,000</text>
+<line x1="570" y1="459.0" x2="920" y2="459.0" stroke="#dbe2ea" stroke-width="1" stroke-dasharray=""/>
+<text x="560" y="463.0" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="end" font-weight="400">20,000</text>
+<line x1="570" y1="459" x2="570" y2="631" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="570" y1="631" x2="920" y2="631" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<line x1="570.0" y1="631" x2="570.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="570.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">1</text>
+<line x1="720.0" y1="631" x2="720.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="720.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">4</text>
+<line x1="920.0" y1="631" x2="920.0" y2="635" stroke="#94a3b8" stroke-width="1" stroke-dasharray=""/>
+<text x="920.0" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">8</text>
+<text x="745.0" y="669" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="400">RAM wait (cycles per word)</text>
+<polyline points="570.00,575.58 720.00,530.48 920.00,470.35" fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="570.00" cy="575.58" r="3.4" fill="#64748b"><title>Repeated stores: Neither, RAM wait 1, 6,444 program cycles</title></circle>
+<circle cx="720.00" cy="530.48" r="3.4" fill="#64748b"><title>Repeated stores: Neither, RAM wait 4, 11,688 program cycles</title></circle>
+<circle cx="920.00" cy="470.35" r="3.4" fill="#64748b"><title>Repeated stores: Neither, RAM wait 8, 18,680 program cycles</title></circle>
+<polyline points="570.00,574.22 720.00,534.44 920.00,481.39" fill="none" stroke="#b45309" stroke-width="2.5" stroke-dasharray="6 3"/>
+<circle cx="570.00" cy="574.22" r="3.4" fill="#b45309"><title>Repeated stores: D-cache only, RAM wait 1, 6,602 program cycles</title></circle>
+<circle cx="720.00" cy="534.44" r="3.4" fill="#b45309"><title>Repeated stores: D-cache only, RAM wait 4, 11,228 program cycles</title></circle>
+<circle cx="920.00" cy="481.39" r="3.4" fill="#b45309"><title>Repeated stores: D-cache only, RAM wait 8, 17,396 program cycles</title></circle>
+<polyline points="570.00,574.96 720.00,566.96 920.00,556.30" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="2 3"/>
+<circle cx="570.00" cy="574.96" r="3.4" fill="#2563eb"><title>Repeated stores: I-cache only, RAM wait 1, 6,516 program cycles</title></circle>
+<circle cx="720.00" cy="566.96" r="3.4" fill="#2563eb"><title>Repeated stores: I-cache only, RAM wait 4, 7,446 program cycles</title></circle>
+<circle cx="920.00" cy="556.30" r="3.4" fill="#2563eb"><title>Repeated stores: I-cache only, RAM wait 8, 8,686 program cycles</title></circle>
+<polyline points="570.00,573.60 720.00,570.92 920.00,567.34" fill="none" stroke="#047857" stroke-width="2.5" stroke-dasharray=""/>
+<circle cx="570.00" cy="573.60" r="3.4" fill="#047857"><title>Repeated stores: Both, RAM wait 1, 6,674 program cycles</title></circle>
+<circle cx="720.00" cy="570.92" r="3.4" fill="#047857"><title>Repeated stores: Both, RAM wait 4, 6,986 program cycles</title></circle>
+<circle cx="920.00" cy="567.34" r="3.4" fill="#047857"><title>Repeated stores: Both, RAM wait 8, 7,402 program cycles</title></circle>
+<text x="40" y="700" fill="#334155" font-family="Arial, sans-serif" font-size="11" text-anchor="start" font-weight="400">Measured simulation cycles, 18 Nov 2026. Checker readback and final dirty-line drain excluded.</text>
+</svg>

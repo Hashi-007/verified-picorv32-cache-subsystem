@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.zip binary
+
+# Preserve the checked instruction-image bytes and unmodified upstream files.
+programs/*.hex -text
+third_party/picorv32/picorv32.v -text
+third_party/picorv32/COPYING -text

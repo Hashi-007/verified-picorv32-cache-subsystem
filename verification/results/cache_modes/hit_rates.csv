@@ -1,0 +1,5 @@
+program,cpu_instr_fetches,icache_hits,icache_misses,icache_hit_rate_percent,cache_hits,cache_misses,dcache_hit_rate_percent,cache_read_hits,cache_read_misses,dcache_read_hit_rate_percent
+reuse,1607,1602,5,99.69,252,6,97.67,252,4,98.44
+sequential,7691,7686,5,99.93,960,322,74.88,960,320,75.0
+conflict,905,901,4,99.56,0,258,0.0,0,256,0.0
+store_heavy,1470,1462,8,99.46,264,14,94.96,12,8,60.0
