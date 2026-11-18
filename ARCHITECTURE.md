@@ -1,8 +1,8 @@
 # Cache subsystem architecture
 
 This document describes the implemented subsystem. The processor is
-third-party PicoRV32 IP; the cache and integration contribution is described
-in [ATTRIBUTION.md](ATTRIBUTION.md).
+third-party PicoRV32 IP; see [ATTRIBUTION.md](ATTRIBUTION.md) for the project
+author and dependency provenance.
 
 ## Request routing and responses
 

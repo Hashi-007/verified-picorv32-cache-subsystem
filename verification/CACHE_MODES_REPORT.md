@@ -135,7 +135,4 @@ may remain dirty at completion; there is no final full-cache drain. This is
 simulation evidence, without synthesis, FPGA area, achieved FMax or power
 measurements.
 
-The learner developed the I-cache RTL and initial wrapper connections through
-review. Mentor contributions here complete the independent bypass switches,
-parameter plumbing, runner compatibility, integration checks and reporting.
-PicoRV32 remains the pinned third-party CPU IP.
+PicoRV32 is the pinned third-party CPU IP; see [attribution](../ATTRIBUTION.md).

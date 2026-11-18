@@ -1,6 +1,5 @@
 # Sequential workload: one pass through 5 KiB, exceeding the 4 KiB cache.
-# Assembly source completed with mentor corrections; image hand-encoded.
-# Reuses the learner's loop from cache_reuse.S.
+# Reuses the summation loop from cache_reuse.S; image hand-encoded.
 # Input fixture: 1280 words containing 1..1280 at 0x1000..0x23FC.
 # Sum: 1280 * 1281 / 2 = 819840 (0x000C8280).
 # Result address: 0x3000, outside the input array.

@@ -27,15 +27,15 @@
     ".gitattributes": "1bfba486a4c9edf6acbe4e278a904d396fc76aff1e3ca127c820fc3d49ca0fec",
     ".gitignore": "3b622e51ed7e909bd16c37492a9f5c8a03e05a58000cf10777140fbae4494854",
     "programs/cache_conflict.hex": "85f30ef438b5ff94b6d290e868b97868565b1a2027d443a3561fb8d4d4e50fe6",
-    "programs/cache_conflict.S": "0a6da1a626e73863cd43adc4ffe21648779e7de8f7a80f4f29967e4eb744e798",
+    "programs/cache_conflict.S": "b7e18c2400d3080c68f4f8b9a86db385a245013735a680a3d45df62582b100d6",
     "programs/cache_reuse.hex": "ec19fe0a6c9dbeefa3e5caf5404234380524f71b64bbd08e24601e21cdc96706",
-    "programs/cache_reuse.S": "a82a8181877c7e30318a40a9b1eaee66b65a7f30fd1859f97a4e792f8c574e8e",
+    "programs/cache_reuse.S": "838551686c073ebca91739ab6f2fdfced28fdf9d0933b1737c155a3286b32474",
     "programs/cache_sequential.hex": "ca014cc284ee10e03d0fa310c59d6c8baa307851c448a0896e721b7286132996",
-    "programs/cache_sequential.S": "1053bb89e5eb56f02211f0823886add7851eb47033c052b5fc47680370e0bf4b",
+    "programs/cache_sequential.S": "9c39f7307aa1648bdd6d96f0e1d0bd76e376c8796416faf16b6e99f8a32faac0",
     "programs/cache_smoke.hex": "832a7bc94ba998854c77ec043be21d2702c09ee82283e3c981f9a3469af3d028",
-    "programs/cache_smoke.S": "31a7e216bfd41a14d60ce779fdaef47118d502acddf6064a200b5ea889c34d45",
+    "programs/cache_smoke.S": "8b917c9764b10aeb00ee1fe6511db819130651fd61d20cf1a2dd3a5702ad0e69",
     "programs/cache_store_heavy.hex": "72ddd412cb9a806e56d21bdce062d6485252dec818c4711ad0a224e223f49804",
-    "programs/cache_store_heavy.S": "37948284064efd5bcc7b9647136525c76384c67cbe9f49fb844a01e7ba09a66b",
+    "programs/cache_store_heavy.S": "40709d0f80b9074c571de92d46dfc0f2116ee03f9d1087531090120af1ede839",
     "rtl/cache_wrapper.sv": "b66cdfe1372e42833acb52e1f65d587c45c4190006b8e40e9167c86c31d95669",
     "rtl/data_cache.sv": "8d36b33add806779b7f3e0f4ebf40dba38fc90d3b28648639969b730a3bfdcde",
     "rtl/instruction_cache.sv": "49e9b95149bfc4e28d32bbbdcb37e3d11f3b678e8993f90e65aa235c3e43c294",
@@ -90,5 +90,10 @@
     "verification/cache_modes.py": "8ee6f10fe1d3c96985f8de472230937d11cb75a66dbc92b894f6251d327d2e37",
     "verification/check_regression.py": "78a6b8099a4b8dd4538e7a2057ee95067e5ad46c22e50bd19b2affc32a1599bd",
     "verification/processor_benchmarks.py": "620b416d40efe7a9f7835ec096683df9c166078a7e5e414591f79b98ad305c19"
+  },
+  "documentation_update": {
+    "date": "2026-11-18",
+    "scope": "Project author and maintainer identified as Muhammad Hashir Aslam; third-party PicoRV32 provenance retained.",
+    "validation": "Documentation and assembly comments only. Assembly operations unchanged; upstream CPU, license, RTL, testbenches, program images and measured results unchanged."
   }
 }

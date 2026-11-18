@@ -9,7 +9,7 @@ Start with the [project overview](../README.md).
 | [Run guide](../sim/README.md) | Reproduce the simulations and interpret their output |
 | [Verification overview](../verification/README.md) | Tests, evidence and coverage scope |
 | [Performance report](../verification/CACHE_MODES_REPORT.md) | All cache configurations, cycle counts and hit rates |
-| [Attribution](../ATTRIBUTION.md) | Learner contributions, assistance and third-party CPU |
+| [Attribution](../ATTRIBUTION.md) | Project author and third-party CPU provenance |
 
 The earlier project-map PDF and learning-stage notes remain in the local
 workspace. This source publication uses the current Markdown architecture

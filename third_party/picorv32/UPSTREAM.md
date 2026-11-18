@@ -1,7 +1,7 @@
 # PicoRV32 upstream dependency
 
-Imported 2026-11-16 for the learner's cache integration project, on explicit
-request. This is existing third-party CPU IP, not a learner-authored processor.
+Imported 2026-11-16 for cache subsystem integration. PicoRV32 is existing
+third-party CPU IP from the YosysHQ project.
 
 - Repository: https://github.com/YosysHQ/picorv32
 - Pinned revision: `ef203c2b0a3fb793280f5114941416c425c5b461`

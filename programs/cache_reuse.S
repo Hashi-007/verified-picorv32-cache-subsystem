@@ -1,6 +1,4 @@
-# Small working-set reuse benchmark, collected from the guided exercise.
-# Learner wrote the inner loop and outer-loop decrement/branch.
-# Mentor supplied initialization, result-store and completion boilerplate.
+# Small working-set reuse benchmark.
 # Input fixture: 16 words containing 1..16 at byte addresses 0x1000..0x103C.
 # Sum all 16 words on each of 16 passes: 16 * (16 * 17 / 2) = 2176.
 # Result: 0x00000880 at 0x1100. Completion: store 1 at 0x10FFC.

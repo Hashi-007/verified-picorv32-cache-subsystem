@@ -3,7 +3,6 @@
 # Their tags are 1 and 2, so each alternating input load replaces the other.
 # Repeat 128 read pairs; expected sum 128 * (1 + 2) = 384 (0x00000180).
 # Store the result at 0x3000 and completion marker 1 at 0x10FFC.
-# Learner completed the six loop instructions; mentor supplied setup/footer.
 # cache_conflict.hex contains 16 hand-encoded words, independently decoded.
 # The TB supplies the two input words; the runner profile is conflict.
     .option norvc

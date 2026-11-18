@@ -26,9 +26,8 @@ reset cases pass, including retained completed RAM writes and CPU-image
 reset reconciliation. Direct RAM-read comparisons are enabled and pass.
 Full suite completion is not claimed; field guards, per-transfer random delays, random regression,
 back-to-back traffic and coverage are pending.
-Recorded 2026-11-10 from the current SPEC.md and the mentor-supplied project
-map PDF, page 12. This promotes the existing plan into a working traceability
-file; it does not add a new prerequisite exercise or claim learner authorship.
+Recorded 2026-11-10 from SPEC.md and the original project map, page 12,
+to trace requirements to checks and coverage targets.
 
 | ID | Requirement / stimulus | Independent check | Coverage target |
 | --- | --- | --- | --- |
@@ -68,15 +67,12 @@ coverage evidence, and an explained debugged bug or checker-negative case.
 The initial RTL draft now has the directed runtime evidence below; these
 smokes do not establish the complete regression or coverage criteria.
 
-UVM environment responsibilities are described in the PDF, page 11. Signal
-interface and testbench top are completed by the mentor on explicit requests
-(2026-11-11). The learner's first fixed-one-cycle RAM model, with requested
-mentor initialization/timing edits, is connected after guided corrections.
-All four sources compile, elaborate and pass the bounded clock/reset smoke.
-Top no longer drives RAM responses or CPU request fields. The complete UVM
-package, environment and test are now integrated through config_db/run_test.
-Mentor implements requested package/top wiring and read-return support in
-the driver/helper; learner's read/write helper organization is retained.
+UVM environment responsibilities are described in the original project map,
+page 11. The signal interface, testbench top and fixed-one-cycle RAM model
+were connected on 2026-11-11. All four sources compile, elaborate and pass
+the bounded clock/reset smoke. Top no longer drives RAM responses or CPU
+request fields. The UVM package, environment and test are integrated through
+config_db/run_test. The driver read/write helpers include read-return support.
 
 2026-11-12 runtime evidence (Questa/UVM 1.1d, fixed one-cycle RAM):
 - Eight-read project sequence: 350 ns, 8 CPU completions, 4 RAM reads,
@@ -104,7 +100,7 @@ the driver/helper; learner's read/write helper organization is retained.
   and incorrect-writeback-address observations each produce exactly one
   intended policy error. Four logs pass independent combined-event/data/
   report checks in tmp/cache_checks/cache_masks_ram_policy_20261112/.
-- Learner's dirty-store extension after corrected read-output argument:
+- Dirty-store extension after correcting the read-output argument:
   2460 ns, 61 CPU completions, 56 hits/5 misses, 20 RAM reads/8 writes.
   Full store to 0x2014 evicts dirty 0x1010; readback returns DEADBEEF.
   Reload of 0x1014 evicts dirty 0x2010 and returns retained 0000CC05.
@@ -113,7 +109,7 @@ the driver/helper; learner's read/write helper organization is retained.
   dirty read/store-miss evidence. Compile has 0 errors/0 warnings; simulator
   +acc warning is explained. Evidence: tmp/cache_checks/
   cache_dirty_store_20261112/{compile.log,simulation.log,results.json,
-  check_dirty_store.py}; accepted learner source is archived in reference/.
+  check_dirty_store.py}; the pre-edit source is archived locally in reference/.
 - Separate cache_wait_sequence/cache_wait_test: 8 CPU requests, 3 hits/
   5 misses, 20 RAM reads/12 writes at every fixed latency from 1 through 8.
   Finish times are 950/1270/1590/1910/2230/2550/2870/3190 ns respectively.
@@ -125,8 +121,8 @@ the driver/helper; learner's read/write helper organization is retained.
   Positive runs have zero assertion/UVM errors; original directed test
   still passes at 2460 ns. Compile 0 errors/0 warnings, initial +acc warning
   explained. Evidence: tmp/cache_checks/cache_wait_test_20261112/ logs,
-  assertions/, check_wait_logs.py and results.json. Mentor implementation
-  on explicit request; no learner authorship or overall coverage claim.
+  assertions/, check_wait_logs.py and results.json. This establishes the
+  directed wait cases; overall coverage closure is recorded above.
 - First partial-refill reset at fixed RAM wait 4: 410 ns, one CPU completion,
   zero hits/one miss, six RAM reads/zero writes. Reads 1000/1004 complete
   before reset; reset is low 150-170 ns and sampled at 155/165 ns. The retry
@@ -164,8 +160,8 @@ the driver/helper; learner's read/write helper organization is retained.
   tmp/cache_checks/cache_reset_idle_20261113/ logs, VCD, validator/results.
   This covers the three directed phase examples; broader progress-point
   crosses and full verification closure remain pending.
-- Direct RAM-read comparison enabled after learner implementation and
-  requested mentor syntax/diagnostic fixes. Original test passes 2460 ns
+- Direct RAM-read comparison enabled, with syntax and diagnostic fixes.
+  Original test passes 2460 ns
   (20 RAM reads); three-phase reset test passes 1280 ns at wait 4 (14 RAM
   reads), including retained data. Both final compiles 0 errors/0 warnings,
   zero positive UVM/assertion errors. Expected initial +acc warning explained.

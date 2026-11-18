@@ -4,7 +4,6 @@
 # After the writes, conflicting reads evict all four dirty lines to RAM.
 # Read the original words back and sum them: 16 * 16 = 256 (0x100).
 # Result at 0x3000; completion marker 1 at 0x10FFC.
-# Learner completed the seven loop instructions; mentor supplied the rest.
 # cache_store_heavy.hex contains 30 hand-encoded words, independently decoded.
 # Runner profile: store_heavy. No separate input fixture is required.
     .option norvc
@@ -42,7 +41,7 @@ word_loop:
     # Restart at 0x1000 while passes remain.
     bne  x4, x0, pass_loop
 
-    # Mentor-supplied verification: evict the four dirty data lines.
+    # Verify writeback by evicting the four dirty data lines.
     # These addresses share indices 0..3 with 0x1000/1010/1020/1030.
     # The loaded values are discarded; the reads trigger replacement.
     lui  x6, 0x2

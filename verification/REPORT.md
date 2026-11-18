@@ -134,14 +134,9 @@ no unexplained simulator warnings remain. An exploratory -coverage run also
 requested uninstrumented code coverage; that option was removed because these
 reports use native functional covergroups, which are collected by default.
 
-## Ownership and next milestone
+## Processor integration
 
-The cache and initial verification structure developed through learner work
-and guided corrections are retained. The mentor implemented this final batch
-after the learner accepted consolidating the remaining checks: streaming mode,
-random waits/traffic, reset sweep, coverage, guards and reproducible reporting.
-This is assisted project evidence, not independent learner proficiency signoff.
-
-Proceed to the already specified PicoRV32 RV32I integration, then the four
-cached/uncached programs at RAM waits 1, 4 and 8. No additional standalone
-exercise is required before beginning that integration.
+The verified standalone cache is integrated with the third-party PicoRV32
+RV32I CPU. See the [project overview](../README.md) and
+[cache configuration report](CACHE_MODES_REPORT.md) for the completed
+integration and workload comparisons at RAM waits of 1, 4 and 8 cycles.

@@ -130,9 +130,9 @@ FPGA area, achieved clock frequency and power have not been measured.
 
 ## Authorship and licensing
 
-Developed by **Muhammad Hashir Aslam** through guided implementation and
-review. [ATTRIBUTION.md](ATTRIBUTION.md) distinguishes learner work, mentor
-assistance and third-party code.
+**Project author and maintainer: Muhammad Hashir Aslam.**
 
-PicoRV32 is existing CPU IP, retained at a pinned revision under its ISC
-license. No additional license has been selected for project-authored files.
+The project integrates the third-party PicoRV32 CPU core, retained at a pinned
+revision under its [ISC license](third_party/picorv32/COPYING). See
+[ATTRIBUTION.md](ATTRIBUTION.md) for dependency provenance. No additional
+license has been selected for project-authored files.

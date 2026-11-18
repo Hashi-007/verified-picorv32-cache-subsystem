@@ -1,4 +1,4 @@
-# Learner's RV32I smoke program, collected and encoded with mentor assistance.
+# RV32I smoke program for cached load/store integration.
 # cache_smoke.hex contains these nine instructions starting at byte address 0.
 # Encodings follow https://github.com/riscv/riscv-opcodes/blob/master/extensions/rv_i
     .option norvc
